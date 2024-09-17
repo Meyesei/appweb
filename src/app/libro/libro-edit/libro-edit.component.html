@@ -1,0 +1,17 @@
+<h3>Libro Edit component</h3>
+
+<h3>Libro new component</h3>
+
+<form (submit)= "update()" >
+    <input type="text" name="title" [(ngModel)]="editLibro.title">,
+    <input type="text" name="title" [(ngModel)]="editLibro.author">
+    <input type="text" name="title" [(ngModel)]="editLibro.genre">
+    <input type="text" name="title" [(ngModel)]="editLibro.publishedYear">
+
+
+   <button type="submit">
+    Update
+   </button>
+
+</form>
+

@@ -1,0 +1,15 @@
+<h1>Libros main component</h1>
+
+<pre>
+    {{  libros| json }}
+</pre>
+
+<app-libro-new (createNewLibroEvent) = "create($event)"></app-libro-new>
+
+<app-libro-list
+    [libros] = "libros"
+    (destroyLibroEvent) = "destroy($Event)"
+></app-libro-list>
+
+
+

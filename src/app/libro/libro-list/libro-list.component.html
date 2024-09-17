@@ -1,0 +1,10 @@
+<h3>libro list component</h3>
+
+<div *ngFor= "let libro of libros"> 
+    {{libro._id}} - {{libro.title}} - {{libro.genre}} - {{libro.publishedYear}}
+
+    <button (click)="destroy(libro)"> Delete</button>
+    <button>Update</button>
+
+<app-list-edit></app-list-edit>
+</div>
